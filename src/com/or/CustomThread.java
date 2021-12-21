@@ -7,7 +7,8 @@ public class CustomThread extends Thread{
 
         if(Logger.getInstance() != null){
 
-          System.out.println(LogLevel.INFO +  " Logging from: " + Thread.currentThread().getName());
+          Logger.getInstance().log(LogLevel.INFO, "logging from: " + Thread.currentThread().getName());
+
         }
     }
 }
